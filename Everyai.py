@@ -8,10 +8,10 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 # Neural Network Architecture
-input_neurons = 9000
-hidden_layers = 800  # Number of hidden layers
-hidden_neurons = 10000
-output_neurons = 9000
+input_neurons = 3000000
+hidden_layers = 80000  # Number of hidden layers
+hidden_neurons = 8000000
+output_neurons = 3000000
 
 # Bias values
 input_bias = 5
@@ -47,6 +47,11 @@ def forward_pass(X):
 
 # Example input data (1 sample, 9000 features)
 X = np.random.randn(1, input_neurons)
+
+# Perform forward pass
+output = forward_pass(X)
+print("Output after forward pass:", output)
+
 
 # Perform forward pass
 output = forward_pass(X)

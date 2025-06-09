@@ -1,6 +1,5 @@
 import numpy as np
 
-# ReLU and Sigmoid Activation Functions
 def relu(x):
     return np.maximum(0, x)
 
@@ -9,7 +8,7 @@ def sigmoid(x):
 
 # Neural Network Architecture
 input_neurons = 3000000
-hidden_layers = 80000  # Number of hidden layers
+hidden_layers = 80000  
 hidden_neurons = 8000000
 output_neurons = 3000000
 
